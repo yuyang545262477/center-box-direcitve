@@ -1,0 +1,10 @@
+$height: 8rem !default;
+
+.flex-section {
+  display: flex;
+  height: $height;
+  &.col {
+    flex-direction: column;
+  }
+
+}

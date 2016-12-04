@@ -1,0 +1,65 @@
+<!doctype html>
+<html ng-app="flex">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>center box direcitve</title>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <!-- build:css styles/vendor.css -->
+  <!-- bower:css -->
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+</head>
+<body>
+<!--[if lt IE 10]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="container">
+  <flex-section>
+    <flex-box>
+      <span>hello world</span>
+    </flex-box>
+    <flex-box flex="2">
+      <span>I love flex box</span>
+    </flex-box>
+    <flex-box>
+      <span>other</span>
+    </flex-box>
+  </flex-section>
+  <flex-section col="true" height="300">
+    <flex-box left-around="true">
+      <span>hello world</span>
+      <span>hello world</span>
+    </flex-box>
+    <flex-box>
+      <span>I love flex box</span>
+    </flex-box>
+    <flex-box>
+      <span>other</span>
+    </flex-box>
+  </flex-section>
+</div>
+
+<!-- build:js scripts/vendor.js -->
+<!-- bower:js -->
+<script src="/bower_components/angular/angular.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js scripts/main.js -->
+<script src="scripts/main.js"></script>
+<!--<script src="scripts/index.js"></script>-->
+
+<!-- endbuild -->
+</body>
+</html>

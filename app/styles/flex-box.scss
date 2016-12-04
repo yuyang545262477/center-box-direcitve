@@ -1,0 +1,14 @@
+.flex-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &.col {
+    flex-direction: column;
+  }
+  &.leftAround {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+}

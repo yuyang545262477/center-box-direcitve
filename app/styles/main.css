@@ -1,0 +1,19 @@
+.flex-section {
+  display: flex;
+  height: 8rem; }
+  .flex-section.col {
+    flex-direction: column; }
+
+.flex-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .flex-box.col {
+    flex-direction: column; }
+  .flex-box.leftAround {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around; }
+
+/*# sourceMappingURL=main.css.map */
