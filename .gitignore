@@ -1,4 +1,7 @@
 node_modules
 .tmp
+.idea
+app
+test
 bower_components
 test/bower_components
