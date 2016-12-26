@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,SAAU;EACR,IAAI,EAAE,CAAC;EACP,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM",
-"sources": ["flex-box.scss"],
-"names": [],
-"file": "flex-box.css"
-}

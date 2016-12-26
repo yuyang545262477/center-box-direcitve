@@ -1,10 +1,21 @@
-$height: 8rem !default;
+@import "flex";
 
 .flex-section {
-  display: flex;
-  height: $height;
-  &.col {
-    flex-direction: column;
+  @extend .flex;
+  width: 100%;
+  &.column {
+    @extend .flexCol;
   }
-
+  &.center {
+    @extend .flexCenter;
+  }
+  &.leftAround {
+    @extend .flexLeftCenter;
+  }
+  &.centerAround {
+    @extend .flexCenterAround;
+  }
+  &.middleAround {
+    @extend .flexMiddleAround;
+  }
 }

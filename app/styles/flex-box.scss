@@ -1,14 +1,46 @@
+@import "flex";
+
 .flex-box {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &.col {
-    flex-direction: column;
+  @extend .flex;
+  width: 100%;
+  @extend .flexCenter;
+  position: relative;
+  &.column {
+    @extend .flexCol;
   }
   &.leftAround {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    @extend .flexLeftCenter;
   }
+  &.leftCenter {
+    @extend .flexLeftCenter; //继承的类名相同，仍然保留的原因：方便语义化
+  }
+  &.middleAround {
+    @extend .flexMiddleAround;
+  }
+
+  &.centerAround {
+    @extend .flexCenterAround;
+  }
+  &.rightCenter {
+    @extend .flexRightCenter;
+  }
+  &.default {
+    @extend .flexDefault;
+  }
+  &.centerBottom {
+    @extend .flexCenterBottom;
+  }
+  &.centerDefault {
+    @extend .flexCenterDefault;
+  }
+  &.leftBottom {
+    @extend .flexLeftBottom;
+  }
+  &.centerBetween {
+    @extend .flexCenterBetween;
+  }
+  &.leftBetween {
+    @extend .flexLeftBetween;
+  }
+
 }
