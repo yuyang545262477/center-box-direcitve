@@ -1,0 +1,35 @@
+@import "flex";
+
+$flexButtonHeight: pxToRem(47);
+$flexButtonWidth: pxToRem(180);
+$flexButtonBorderRadius: pxToRem(8) !default;
+$flexButtonBG: #42A5F5 !default;
+$flexButtonDisableBg: #949494;
+$flexButtonColor: #FFF !default;
+$flexButtonFontSize: 16px !default;
+
+.flex-button {
+  display: flex;
+  width: $flexButtonWidth;
+  max-width: 95%;
+  height: $flexButtonHeight;
+  justify-content: center;
+  align-items: center;
+  background-color: $flexButtonBG;
+  color: $flexButtonColor;
+  font-size: $flexButtonFontSize;
+  border-radius: $flexButtonBorderRadius;
+  &.activated {
+    border: $border;
+  }
+  /*内部元素垂直排列*/
+  &.col {
+    padding: 0;
+    flex: none;
+    flex-direction: column;
+  }
+  &[disabled="disabled"] {
+    background-color: $flexButtonDisableBg;
+    pointer-events: none !important; //模擬button disabled ;  ie10 以下不兼容方法
+  }
+}

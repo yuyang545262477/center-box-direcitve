@@ -1,0 +1,98 @@
+//value
+$height: auto !default;
+$borderColor: #c9c9c9;
+$border: 1px solid $borderColor;
+$padding: 0 .5rem;
+//func
+/*mixin && function 存放区域*/
+@function pxToRem($px) {
+  @return $px/16*1rem;
+}
+
+.flex {
+  display: flex;
+  height: $height;
+}
+
+/*使内部元素 上下排列*/
+.flexCol {
+  flex-direction: column;
+  padding: 0;
+}
+
+/*使用内部元素 居中对其*/
+.flexCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+/*左对齐，垂直剧中 */
+.flexLeftCenter {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+/*垂直居中,左右around*/
+.flexCenterAround {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/*垂直剧中，右对齐*/
+.flexRightCenter {
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/*左右剧中，上下拉升*/
+.flexMiddleAround {
+  flex-direction: row;
+  @extend .flexCenterAround;
+}
+
+/*恢复flex默认布局*/
+.flexDefault {
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/*垂直居中，左对齐*/
+.flexMiddleLeft {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/*左右居中，垂直坠地*/
+.flexCenterBottom {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*左右剧中，垂直不约束 适用于多个元素*/
+//用于记录列表topTar
+.flexCenterDefault {
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/*单个元素，左下角*/
+.flexLeftBottom {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/*多个元素，左右剧中，垂直两边*/
+.flexCenterBetween {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*多个元素，左对齐 垂直两边*/
+.flexLeftBetween {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}

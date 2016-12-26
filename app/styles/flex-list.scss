@@ -1,0 +1,22 @@
+@import "flex";
+
+.flex-list {
+  @extend .flex;
+  flex-direction: column;
+  padding: $padding;
+  border-top: $border;
+  border-bottom: $border;
+  &.kill-border-bottom {
+    border-bottom: none;
+  }
+  &.kill-border-top {
+    border-top: none;
+  }
+  &.kill-border-both {
+    border-top: none;
+    border-bottom: none;
+  }
+  &.kill-padding {
+    padding: 0;
+  }
+}
