@@ -1,4 +1,4 @@
 (function () {
   'use strict';
-  angular.module('index', ['flex']);
+  angular.module('start', ['FlexUI']);
 })();
