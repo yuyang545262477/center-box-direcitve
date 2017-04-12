@@ -30,6 +30,13 @@ $padding: 0 .5rem;
 .flexLeftCenter {
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
+}
+
+/* 多个项目 左对齐  垂直 around */
+.flexLeftAround {
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: space-around;
 }
 
